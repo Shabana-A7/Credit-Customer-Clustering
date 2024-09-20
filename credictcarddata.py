@@ -8,7 +8,7 @@ scaler = joblib.load('preprocessork.pkl')
 
 # Define the app layout
 st.title("Credit Card Customer Clustering App")
-
+st.write("This Streamlit web application utilizes a K-means clustering algorithm to analyze credit card customer data and predict the cluster to which each customer belongs.")
 # Create input fields for user input
 st.sidebar.header('User Input Parameters')
 
