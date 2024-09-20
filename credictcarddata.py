@@ -9,9 +9,10 @@ scaler = joblib.load('preprocessork.pkl')
 # Define the app layout
 st.title("Credit Card Customer Clustering App")
 st.write("This Streamlit web application utilizes a K-means clustering algorithm to analyze credit card customer data and predict the cluster to which each customer belongs.")
+st.markdown("---")
 # Create input fields for user input
 st.sidebar.header('User Input Parameters')
-
+st.markdown("---")
 def user_input_features():
     avg_credit_limit = st.sidebar.number_input('Average Credit Limit', min_value=0, value=100000)
     total_credit_cards = st.sidebar.number_input('Total Credit Cards', min_value=0, value=2)
@@ -41,7 +42,7 @@ cluster_prediction = kmeans.predict(scaled_input)
 # Display results
 st.subheader('Cluster Prediction')
 st.write(f'The customer belongs to cluster: {cluster_prediction[0]}')
-
+st.markdown("---")
 # Cluster descriptions
 st.write("""
 **Cluster Descriptions:**
@@ -49,7 +50,8 @@ st.write("""
 - Cluster 1 : Customers who have the lowest total credit and average limit.suggesting these customers may be less financially active or have lower creditworthiness.
 - Cluster 2 : Customers who have the highest total credit cards and average limits.These customers are likely to be more financially engaged and potentially have a stronger credit profile.
 """)
-
+st.markdown("---")
 # Optionally display the raw data
 st.subheader('User Input Data')
 st.write(user_input)
+st.markdown("---")
