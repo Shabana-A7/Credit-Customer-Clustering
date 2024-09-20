@@ -40,6 +40,7 @@ cluster_prediction = kmeans.predict(scaled_input)
 
 # Display results
 st.subheader('Cluster Prediction')
+st.markdown("---")
 st.write(f'The customer belongs to cluster: {cluster_prediction[0]}')
 st.markdown("---")
 # Cluster descriptions
