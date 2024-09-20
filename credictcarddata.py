@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
-
+st.set_page_config(page_title="Customer-Clustering")
 # Load the model and scaler
 kmeans = joblib.load('kmeans_model.pkl')
 scaler = joblib.load('preprocessork.pkl')
