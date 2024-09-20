@@ -8,8 +8,8 @@ scaler = joblib.load('preprocessork.pkl')
 
 # Define the app layout
 st.title("Credit Card Customer Clustering App")
-st.write("This Streamlit web application utilizes a K-means clustering algorithm to analyze credit card customer data and predict the cluster to which each customer belongs.")
 st.markdown("---")
+st.write("This Streamlit web application utilizes a K-means clustering algorithm to analyze credit card customer data and predict the cluster to which each customer belongs.")
 # Create input fields for user input
 st.sidebar.header('User Input Parameters')
 st.markdown("---")
@@ -19,7 +19,7 @@ def user_input_features():
     total_visits_bank = st.sidebar.number_input('Total Visits to Bank', min_value=0, value=1)
     total_visits_online = st.sidebar.number_input('Total Visits Online', min_value=0, value=1)
     total_calls_made = st.sidebar.number_input('Total Calls Made', min_value=0, value=0)
-    
+    st.markdown("---")
     # Create a DataFrame with the input values
     user_input = pd.DataFrame({
         'Avg_Credit_Limit': [avg_credit_limit],
