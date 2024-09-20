@@ -42,6 +42,14 @@ cluster_prediction = kmeans.predict(scaled_input)
 st.subheader('Cluster Prediction')
 st.write(f'The customer belongs to cluster: {cluster_prediction[0]}')
 
+# Cluster descriptions
+st.write("""
+**Cluster Descriptions:**
+- **Cluster 0 **: Customers who have total credit and a medium average limit.
+- **Cluster 1 **: Customers who have the lowest total credit and average limit.
+- **Cluster 2 **: Customers who have the highest total credit cards and average limits.
+""")
+
 # Optionally display the raw data
 st.subheader('User Input Data')
 st.write(user_input)
