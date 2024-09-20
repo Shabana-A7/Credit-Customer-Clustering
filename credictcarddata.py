@@ -19,7 +19,6 @@ def user_input_features():
     total_visits_bank = st.sidebar.number_input('Total Visits to Bank', min_value=0, value=1)
     total_visits_online = st.sidebar.number_input('Total Visits Online', min_value=0, value=1)
     total_calls_made = st.sidebar.number_input('Total Calls Made', min_value=0, value=0)
-    st.markdown("---")
     # Create a DataFrame with the input values
     user_input = pd.DataFrame({
         'Avg_Credit_Limit': [avg_credit_limit],
