@@ -45,9 +45,9 @@ st.write(f'The customer belongs to cluster: {cluster_prediction[0]}')
 # Cluster descriptions
 st.write("""
 **Cluster Descriptions:**
-- Cluster 0 : Customers who have total credit and a medium average limit.
-- Cluster 1 : Customers who have the lowest total credit and average limit.
-- Cluster 2 : Customers who have the highest total credit cards and average limits.
+- Cluster 0 : Customers who have a total credit amount and a medium average credit limit, meaning they are likely to have a moderate financial profile.
+- Cluster 1 : Customers who have the lowest total credit and average limit.suggesting these customers may be less financially active or have lower creditworthiness.
+- Cluster 2 : Customers who have the highest total credit cards and average limits.These customers are likely to be more financially engaged and potentially have a stronger credit profile.
 """)
 
 # Optionally display the raw data
